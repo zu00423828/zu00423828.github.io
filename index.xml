@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>My New Hugo Site</title>
-    <link>https://zu00423828.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2025 14:03:25 +0800</lastBuildDate>
-    <atom:link href="https://zu00423828.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>First Post</title>
-      <link>https://zu00423828.github.io/posts/first-post/</link>
-      <pubDate>Thu, 02 Jan 2025 14:03:25 +0800</pubDate>
-      <guid>https://zu00423828.github.io/posts/first-post/</guid>
-      <description></description>
-    </item>
-  </channel>
+    <channel>
+        <title>My New Hugo Site</title>
+        <link>https://zu00423828.github.io/</link>
+        <description>Recent content on My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 02 Jan 2025 14:03:25 +0800</lastBuildDate><atom:link href="https://zu00423828.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>First Post</title>
+        <link>https://zu00423828.github.io/posts/first-post/</link>
+        <pubDate>Thu, 02 Jan 2025 14:03:25 +0800</pubDate>
+        
+        <guid>https://zu00423828.github.io/posts/first-post/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>
