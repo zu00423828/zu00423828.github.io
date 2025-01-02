@@ -1,3 +1,12 @@
 baseURL = 'https://zu00423828.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+theme = "hugo-theme-stack"
+
+
+
+[[menu.main]]
+  name = "Blog posts"
+  weight = 1
+  url  = "/posts/"
