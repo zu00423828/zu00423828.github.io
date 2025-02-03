@@ -1,12 +1,16 @@
 baseURL = 'https://zu00423828.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'FongYuan Note'
 
 theme = "hugo-theme-stack"
 
 
+[Params.colorScheme]
+  toggle =false
+  default="dark" 
+
 
 [[menu.main]]
-  name = "Blog posts"
+  name = "Hugo 指令"
   weight = 1
   url  = "/posts/"
