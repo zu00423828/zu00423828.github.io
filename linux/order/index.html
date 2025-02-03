@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="常用的 Linux 指令 Linux 是一個強大的操作系統，擁有眾多命令來進行系統管理和日常操作。以下是一些常用的 Linux 指令及其簡要說明。\n系統相關 1. uname 顯示系統信息。\nuname -r：顯示內核版本。 uname -a：顯示全部系統信息（內核、主機名、處理器架構等）。 2. top 顯示系統的當前運行狀況，包括 CPU 使用率、內存使用量等。\n3. df 顯示文件系統的磁碟空間使用情況。\ndf -h：以人類可讀格式（例如 GB）顯示磁碟空間。 4. free 顯示內存使用情況。\nfree -h：以人類可讀格式顯示內存使用情況。 5. uptime 顯示系統已運行的時間、用戶數量及負載平均值。\n文件和目錄操作 1. ls 列出目錄中的文件和子目錄。\nls -l：列出詳細信息。 ls -a：列出所有文件（包括隱藏文件）。 2. cd 更改當前目錄。\ncd /path/to/directory：切換到指定目錄。 3. pwd 顯示當前工作目錄的完整路徑。\n4. mkdir 創建一個新目錄。\nmkdir new_directory：創建名為 new_directory 的目錄。 5. rmdir 刪除一個空目錄。\n6. rm 刪除文件或目錄。\nrm file.txt：刪除文件。 rm -r directory：遞歸刪除目錄及其內容。 7. cp 複製文件或目錄。\n">
+<title>Order</title>
+
+<link rel='canonical' href='https://zu00423828.github.io/linux/order/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Order">
+<meta property='og:description' content="常用的 Linux 指令 Linux 是一個強大的操作系統，擁有眾多命令來進行系統管理和日常操作。以下是一些常用的 Linux 指令及其簡要說明。\n系統相關 1. uname 顯示系統信息。\nuname -r：顯示內核版本。 uname -a：顯示全部系統信息（內核、主機名、處理器架構等）。 2. top 顯示系統的當前運行狀況，包括 CPU 使用率、內存使用量等。\n3. df 顯示文件系統的磁碟空間使用情況。\ndf -h：以人類可讀格式（例如 GB）顯示磁碟空間。 4. free 顯示內存使用情況。\nfree -h：以人類可讀格式顯示內存使用情況。 5. uptime 顯示系統已運行的時間、用戶數量及負載平均值。\n文件和目錄操作 1. ls 列出目錄中的文件和子目錄。\nls -l：列出詳細信息。 ls -a：列出所有文件（包括隱藏文件）。 2. cd 更改當前目錄。\ncd /path/to/directory：切換到指定目錄。 3. pwd 顯示當前工作目錄的完整路徑。\n4. mkdir 創建一個新目錄。\nmkdir new_directory：創建名為 new_directory 的目錄。 5. rmdir 刪除一個空目錄。\n6. rm 刪除文件或目錄。\nrm file.txt：刪除文件。 rm -r directory：遞歸刪除目錄及其內容。 7. cp 複製文件或目錄。\n">
+<meta property='og:url' content='https://zu00423828.github.io/linux/order/'>
+<meta property='og:site_name' content='FongYuan Note'>
+<meta property='og:type' content='article'><meta property='article:section' content='Linux' /><meta property='article:published_time' content='2025-02-03T20:23:19&#43;08:00'/><meta property='article:modified_time' content='2025-02-03T20:23:19&#43;08:00'/>
+<meta name="twitter:title" content="Order">
+<meta name="twitter:description" content="常用的 Linux 指令 Linux 是一個強大的操作系統，擁有眾多命令來進行系統管理和日常操作。以下是一些常用的 Linux 指令及其簡要說明。\n系統相關 1. uname 顯示系統信息。\nuname -r：顯示內核版本。 uname -a：顯示全部系統信息（內核、主機名、處理器架構等）。 2. top 顯示系統的當前運行狀況，包括 CPU 使用率、內存使用量等。\n3. df 顯示文件系統的磁碟空間使用情況。\ndf -h：以人類可讀格式（例如 GB）顯示磁碟空間。 4. free 顯示內存使用情況。\nfree -h：以人類可讀格式顯示內存使用情況。 5. uptime 顯示系統已運行的時間、用戶數量及負載平均值。\n文件和目錄操作 1. ls 列出目錄中的文件和子目錄。\nls -l：列出詳細信息。 ls -a：列出所有文件（包括隱藏文件）。 2. cd 更改當前目錄。\ncd /path/to/directory：切換到指定目錄。 3. pwd 顯示當前工作目錄的完整路徑。\n4. mkdir 創建一個新目錄。\nmkdir new_directory：創建名為 new_directory 的目錄。 5. rmdir 刪除一個空目錄。\n6. rm 刪除文件或目錄。\nrm file.txt：刪除文件。 rm -r directory：遞歸刪除目錄及其內容。 7. cp 複製文件或目錄。\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "dark");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_f509edb42ecc0ebd.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">FongYuan Note</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/posts/' >
+                
+                
+                
+                <span>Hugo 指令</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/linux/' >
+                
+                
+                
+                <span>Linux</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/linux/order/">Order</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 03, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="常用的-linux-指令">常用的 Linux 指令
+</h1><p>Linux 是一個強大的操作系統，擁有眾多命令來進行系統管理和日常操作。以下是一些常用的 Linux 指令及其簡要說明。</p>
+<hr>
+<h2 id="系統相關">系統相關
+</h2><h3 id="1-uname">1. <code>uname</code>
+</h3><p>顯示系統信息。</p>
+<ul>
+<li><code>uname -r</code>：顯示內核版本。</li>
+<li><code>uname -a</code>：顯示全部系統信息（內核、主機名、處理器架構等）。</li>
+</ul>
+<h3 id="2-top">2. <code>top</code>
+</h3><p>顯示系統的當前運行狀況，包括 CPU 使用率、內存使用量等。</p>
+<h3 id="3-df">3. <code>df</code>
+</h3><p>顯示文件系統的磁碟空間使用情況。</p>
+<ul>
+<li><code>df -h</code>：以人類可讀格式（例如 GB）顯示磁碟空間。</li>
+</ul>
+<h3 id="4-free">4. <code>free</code>
+</h3><p>顯示內存使用情況。</p>
+<ul>
+<li><code>free -h</code>：以人類可讀格式顯示內存使用情況。</li>
+</ul>
+<h3 id="5-uptime">5. <code>uptime</code>
+</h3><p>顯示系統已運行的時間、用戶數量及負載平均值。</p>
+<hr>
+<h2 id="文件和目錄操作">文件和目錄操作
+</h2><h3 id="1-ls">1. <code>ls</code>
+</h3><p>列出目錄中的文件和子目錄。</p>
+<ul>
+<li><code>ls -l</code>：列出詳細信息。</li>
+<li><code>ls -a</code>：列出所有文件（包括隱藏文件）。</li>
+</ul>
+<h3 id="2-cd">2. <code>cd</code>
+</h3><p>更改當前目錄。</p>
+<ul>
+<li><code>cd /path/to/directory</code>：切換到指定目錄。</li>
+</ul>
+<h3 id="3-pwd">3. <code>pwd</code>
+</h3><p>顯示當前工作目錄的完整路徑。</p>
+<h3 id="4-mkdir">4. <code>mkdir</code>
+</h3><p>創建一個新目錄。</p>
+<ul>
+<li><code>mkdir new_directory</code>：創建名為 <code>new_directory</code> 的目錄。</li>
+</ul>
+<h3 id="5-rmdir">5. <code>rmdir</code>
+</h3><p>刪除一個空目錄。</p>
+<h3 id="6-rm">6. <code>rm</code>
+</h3><p>刪除文件或目錄。</p>
+<ul>
+<li><code>rm file.txt</code>：刪除文件。</li>
+<li><code>rm -r directory</code>：遞歸刪除目錄及其內容。</li>
+</ul>
+<h3 id="7-cp">7. <code>cp</code>
+</h3><p>複製文件或目錄。</p>
+<ul>
+<li><code>cp source.txt destination.txt</code>：複製文件。</li>
+<li><code>cp -r source_dir destination_dir</code>：複製目錄。</li>
+</ul>
+<h3 id="8-mv">8. <code>mv</code>
+</h3><p>移動或重命名文件/目錄。</p>
+<ul>
+<li><code>mv old_name.txt new_name.txt</code>：重命名文件。</li>
+<li><code>mv file.txt /path/to/destination/</code>：將文件移動到新目錄。</li>
+</ul>
+<hr>
+<h2 id="檔案內容查看和編輯">檔案內容查看和編輯
+</h2><h3 id="1-cat">1. <code>cat</code>
+</h3><p>查看文件內容。</p>
+<ul>
+<li><code>cat file.txt</code>：顯示 <code>file.txt</code> 的內容。</li>
+</ul>
+<h3 id="2-more-和-less">2. <code>more</code> 和 <code>less</code>
+</h3><p>逐頁顯示文件內容。</p>
+<ul>
+<li><code>more file.txt</code>：逐頁顯示文件內容，按空格鍵翻頁。</li>
+<li><code>less file.txt</code>：逐頁顯示文件內容，支持向上滾動。</li>
+</ul>
+<h3 id="3-head">3. <code>head</code>
+</h3><p>顯示文件的前幾行。</p>
+<ul>
+<li><code>head -n 10 file.txt</code>：顯示文件的前 10 行。</li>
+</ul>
+<h3 id="4-tail">4. <code>tail</code>
+</h3><p>顯示文件的最後幾行。</p>
+<ul>
+<li><code>tail -n 10 file.txt</code>：顯示文件的最後 10 行。</li>
+<li><code>tail -f file.txt</code>：實時顯示文件的新內容（用於查看日志文件）。</li>
+</ul>
+<h3 id="5-nano">5. <code>nano</code>
+</h3><p>文本編輯器，允許在終端內編輯文件。</p>
+<ul>
+<li><code>nano file.txt</code>：編輯 <code>file.txt</code>。</li>
+</ul>
+<hr>
+<h2 id="用戶和權限管理">用戶和權限管理
+</h2><h3 id="1-whoami">1. <code>whoami</code>
+</h3><p>顯示當前登錄的用戶名。</p>
+<h3 id="2-id">2. <code>id</code>
+</h3><p>顯示當前用戶的 UID、GID 及所屬組信息。</p>
+<h3 id="3-chmod">3. <code>chmod</code>
+</h3><p>更改文件或目錄的權限。</p>
+<ul>
+<li><code>chmod 755 file.txt</code>：設置文件為可讀、可寫和可執行。</li>
+</ul>
+<h3 id="4-chown">4. <code>chown</code>
+</h3><p>更改文件或目錄的所有者和所屬組。</p>
+<ul>
+<li><code>chown user:group file.txt</code>：將 <code>file.txt</code> 的擁有者設為 <code>user</code>，所屬組設為 <code>group</code>。</li>
+</ul>
+<h3 id="5-passwd">5. <code>passwd</code>
+</h3><p>更改用戶的密碼。</p>
+<hr>
+<h2 id="網絡相關">網絡相關
+</h2><h3 id="1-ping">1. <code>ping</code>
+</h3><p>檢查網絡連通性。</p>
+<ul>
+<li><code>ping www.example.com</code>：檢查與 <code>www.example.com</code> 的連通性。</li>
+</ul>
+<h3 id="2-ifconfig">2. <code>ifconfig</code>
+</h3><p>顯示或配置網絡接口。</p>
+<ul>
+<li><code>ifconfig</code>：顯示當前網絡配置。</li>
+</ul>
+<h3 id="3-netstat">3. <code>netstat</code>
+</h3><p>顯示網絡連接、路由表、接口統計等信息。</p>
+<ul>
+<li><code>netstat -tuln</code>：顯示當前的 TCP 和 UDP 端口。</li>
+</ul>
+<h3 id="4-ssh">4. <code>ssh</code>
+</h3><p>遠程登錄到另一台計算機。</p>
+<ul>
+<li><code>ssh user@hostname</code>：通過 SSH 連接到遠程計算機。</li>
+</ul>
+<h3 id="5-scp">5. <code>scp</code>
+</h3><p>安全地複製文件到遠程主機。</p>
+<ul>
+<li><code>scp file.txt user@remote:/path/to/destination</code>：將 <code>file.txt</code> 複製到遠程主機。</li>
+</ul>
+<hr>
+<h2 id="搜索和查找">搜索和查找
+</h2><h3 id="1-find">1. <code>find</code>
+</h3><p>在指定目錄中查找文件。</p>
+<ul>
+<li><code>find /path/to/search -name &quot;*.txt&quot;</code>：查找 <code>.txt</code> 文件。</li>
+</ul>
+<h3 id="2-grep">2. <code>grep</code>
+</h3><p>在文件中查找匹配的行。</p>
+<ul>
+<li><code>grep &quot;search_string&quot; file.txt</code>：查找包含 <code>search_string</code> 的行。</li>
+</ul>
+<h3 id="3-locate">3. <code>locate</code>
+</h3><p>快速查找文件（需要事先構建索引）。</p>
+<ul>
+<li><code>locate file.txt</code>：查找名為 <code>file.txt</code> 的文件。</li>
+</ul>
+<hr>
+<h2 id="壓縮和解壓">壓縮和解壓
+</h2><h3 id="1-tar">1. <code>tar</code>
+</h3><p>創建或解壓 <code>.tar</code> 存檔。</p>
+<ul>
+<li><code>tar -cvf archive.tar file1 file2</code>：創建 <code>.tar</code> 壓縮檔案。</li>
+<li><code>tar -xvf archive.tar</code>：解壓 <code>.tar</code> 壓縮檔案。</li>
+</ul>
+<h3 id="2-gzip-和-gunzip">2. <code>gzip</code> 和 <code>gunzip</code>
+</h3><p>壓縮和解壓 <code>.gz</code> 文件。</p>
+<ul>
+<li><code>gzip file.txt</code>：壓縮文件。</li>
+<li><code>gunzip file.txt.gz</code>：解壓文件。</li>
+</ul>
+<h3 id="3-zip-和-unzip">3. <code>zip</code> 和 <code>unzip</code>
+</h3><p>壓縮和解壓 <code>.zip</code> 文件。</p>
+<ul>
+<li><code>zip archive.zip file1 file2</code>：創建 <code>.zip</code> 壓縮檔案。</li>
+<li><code>unzip archive.zip</code>：解壓 <code>.zip</code> 檔案。</li>
+</ul>
+<hr>
+<h2 id="程序管理">程序管理
+</h2><h3 id="1-ps">1. <code>ps</code>
+</h3><p>顯示當前運行的進程。</p>
+<ul>
+<li><code>ps aux</code>：顯示所有運行的進程。</li>
+</ul>
+<h3 id="2-top-1">2. <code>top</code>
+</h3><p>顯示實時的進程信息，並顯示 CPU 和內存的使用情況。</p>
+<h3 id="3-kill">3. <code>kill</code>
+</h3><p>終止進程。</p>
+<ul>
+<li><code>kill PID</code>：終止進程 ID 為 <code>PID</code> 的進程。</li>
+</ul>
+<h3 id="4-htop">4. <code>htop</code>
+</h3><p>比 <code>top</code> 更加直觀的進程管理工具（需要安裝）。</p>
+<ul>
+<li><code>htop</code>：啟動 <code>htop</code> 進程監控。</li>
+</ul>
+<hr>
+<h2 id="系統更新和安裝">系統更新和安裝
+</h2><h3 id="1-apt-getdebianubuntu">1. <code>apt-get</code>（Debian/Ubuntu）
+</h3><p>安裝、更新和卸載軟件包。</p>
+<ul>
+<li><code>sudo apt-get update</code>：更新軟件包索引。</li>
+<li><code>sudo apt-get install package_name</code>：安裝軟件包。</li>
+<li><code>sudo apt-get remove package_name</code>：卸載軟件包。</li>
+</ul>
+<h3 id="2-yumcentosrhel">2. <code>yum</code>（CentOS/RHEL）
+</h3><p>安裝、更新和卸載軟件包。</p>
+<ul>
+<li><code>sudo yum update</code>：更新軟件包。</li>
+<li><code>sudo yum install package_name</code>：安裝軟件包。</li>
+<li><code>sudo yum remove package_name</code>：卸載軟件包。</li>
+</ul>
+<hr>
+<h2 id="日誌和排錯">日誌和排錯
+</h2><h3 id="1-dmesg">1. <code>dmesg</code>
+</h3><p>顯示內核環境信息和錯誤。</p>
+<h3 id="2-tail--f-varlogsyslog">2. <code>tail -f /var/log/syslog</code>
+</h3><p>實時查看系統日誌。</p>
+<hr>
+<h2 id="其他實用命令">其他實用命令
+</h2><h3 id="1-alias">1. <code>alias</code>
+</h3><p>創建命令別名。</p>
+<ul>
+<li><code>alias ll='ls -l'</code>：創建一個 <code>ll</code> 別名，等效於 <code>ls -l</code>。</li>
+</ul>
+<h3 id="2-history">2. <code>history</code>
+</h3><p>顯示命令歷史。</p>
+<hr>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 FongYuan Note
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
